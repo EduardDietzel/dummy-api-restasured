@@ -5,10 +5,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Getter@Setter@AllArgsConstructor@NoArgsConstructor
-public class UserFull {
-
-    public class Location{
+    @Getter@Setter@AllArgsConstructor@NoArgsConstructor
+    class Location{
         private String street;
         private String city;
         private String state;
@@ -16,7 +14,8 @@ public class UserFull {
         private String timezone;
     }
 
-    public class Root{
+    @Getter@Setter@AllArgsConstructor@NoArgsConstructor
+    public class UserFull{
         private String id;
         private String title;
         private String firstName;
@@ -30,4 +29,4 @@ public class UserFull {
         private String registerDate;
         private String updatedDate;
     }
-}
+
